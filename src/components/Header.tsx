@@ -17,7 +17,7 @@ const HeaderWrapper: any = styled.header`
   padding: 8rem 2rem 10rem;
   text-align: center;
   ::after {
-    background: transparent url(/assets/mask.svg) no-repeat bottom left;
+    background: transparent url(/${config.pathPrefix}/assets/mask.svg) no-repeat bottom left;
     background-size: 101%;
     bottom: -2px;
     content: '';
