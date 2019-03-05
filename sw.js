@@ -26,17 +26,17 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-d88b0760127093c1c559.js"
+    "url": "webpack-runtime-04c76b25ee318655dd9a.js"
   },
   {
-    "url": "app-b5301f616e3af3adb81e.js"
+    "url": "app-d35ec745099184c97eb5.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-2931e18f11ce80cd2c58.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "0d9686fd6fad12394677605493463e95"
+    "revision": "468c0869d9fc7a50e35274844ab34950"
   },
   {
     "url": "styles.974ae24a5a4da65e50fd.css"
@@ -45,7 +45,7 @@ self.__precacheManifest = [
     "url": "1-3938d1146b116adfbfea.js"
   },
   {
-    "url": "component---src-pages-404-tsx-1e509926e49efd196e38.js"
+    "url": "component---src-pages-404-tsx-1081864e66ff7d0ccd0d.js"
   },
   {
     "url": "styles-c67533354208d02066c2.js"
@@ -58,7 +58,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "2161d2c80b0bf179b10d5a3a38fc198c"
+    "revision": "c3c948c58739d5966cab93cdb903d298"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -79,7 +79,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `/sally/offline-plugin-app-shell-fallback/index.html`
+      const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
       const cacheName = workbox.core.cacheNames.precache
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
@@ -151,7 +151,7 @@ const messageApi = {
 
     pathnames = pathnames.map(({ pathname, includesPrefix }) => {
       if (!includesPrefix) {
-        return `/sally${pathname}`
+        return `${pathname}`
       } else {
         return pathname
       }
