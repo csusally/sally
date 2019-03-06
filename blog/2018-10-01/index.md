@@ -2,7 +2,7 @@
 date: "2018-01-01"
 title: "template"
 category: "General"
-tags: ['gatsby', 'react', 'typescript', 'graphql']
+tags: ['markdown', 'react', 'typescript', 'graphql']
 banner: ""
 ---
 
