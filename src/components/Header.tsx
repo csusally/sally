@@ -55,7 +55,7 @@ interface Props {
 export class Header extends React.PureComponent<Props> {
   public render() {
     return (
-      <HeaderWrapper banner={this.props.banner || config.defaultBg}>
+      <HeaderWrapper banner={this.props.banner || `/${config.pathPrefix}${config.defaultBg}`}>
         <Content>{this.props.children}</Content>
       </HeaderWrapper>
     );

@@ -66,7 +66,7 @@ export default class IndexPage extends React.Component<PageProps> {
           <Homepage>
             <GridRow background={true}>
               <HomepageContent center={true}>
-                <img src={config.siteLogo} />
+                <img src={`/${config.pathPrefix}${config.siteLogo}`} />
                 <h1>
                   Hi. I am <br />
                   Majid Hajian
