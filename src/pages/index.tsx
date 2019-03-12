@@ -34,7 +34,7 @@ const GridRow: any = styled.div`
       ? `linear-gradient(
       -185deg,
       ${rgba(darken(0.1, props.theme.colors.primary), 0.7)}, 
-      ${rgba(lighten(0.1, props.theme.colors.grey.dark), 0.9)}), url(/${config.pathPrefix}/assets/bg.png) no-repeat`
+      ${rgba(lighten(0.1, props.theme.colors.grey.dark), 0.9)}), url(/assets/bg.png) no-repeat`
       : null};
   background-size: cover;
   padding: 2rem 4rem;
@@ -66,7 +66,7 @@ export default class IndexPage extends React.Component<PageProps> {
           <Homepage>
             <GridRow background={true}>
               <HomepageContent center={true}>
-                <img src={`/${config.pathPrefix}${config.siteLogo}`} />
+                <img src={`${config.siteLogo}`} />
                 <h1>
                   Hi. I am <br />
                   Sally Wu

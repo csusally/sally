@@ -17,7 +17,7 @@ const HeaderWrapper: any = styled.header`
   padding: 8rem 2rem 10rem;
   text-align: center;
   ::after {
-    background: transparent url(/${config.pathPrefix}/assets/mask.svg) no-repeat bottom left;
+    background: transparent url(/assets/mask.svg) no-repeat bottom left;
     background-size: 101%;
     bottom: -2px;
     content: '';
@@ -55,7 +55,7 @@ interface Props {
 export class Header extends React.PureComponent<Props> {
   public render() {
     return (
-      <HeaderWrapper banner={this.props.banner || `/${config.pathPrefix}${config.defaultBg}`}>
+      <HeaderWrapper banner={this.props.banner || `${config.defaultBg}`}>
         <Content>{this.props.children}</Content>
       </HeaderWrapper>
     );

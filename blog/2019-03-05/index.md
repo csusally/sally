@@ -3,7 +3,7 @@ date: "2018-01-01"
 title: "Spring Festival"
 category: "General"
 tags: ['festival', 'friends']
-banner: "/sally/assets/2019-03-05/15.jpg"
+banner: "/assets/2019-03-05/15.jpg"
 ---
 
     # Spring Festival
@@ -16,7 +16,7 @@ daily life.
 Wish everyone has a better life next year!
 
 
-![Alt Text](/sally/assets/2019-03-05/11.jpg "Image Title")
-![Alt Text](/sally/assets/2019-03-05/12.jpg "Image Title")
+![Alt Text](/assets/2019-03-05/11.jpg "Image Title")
+![Alt Text](/assets/2019-03-05/12.jpg "Image Title")
 
 
