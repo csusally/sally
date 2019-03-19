@@ -10,9 +10,9 @@ banner: ""
 >使用vue开发的SPA（单页面）web页面随着项目的不断增大，不可避免的会出现首页加载时间太长的问题，这时候就要着重的考虑进行首页加载优化了。优化方案可以从以下几个方面去考虑。
 
 
-![e54c4af02bca404d971fa0230e5d7068.png](en-resource://database/709:0)
+![vue首页加载优化](/assets/2019-03-19/11vue.png "vue首页加载优化")
 
-## 减小入口文件体积
+### 减小入口文件体积
 未做优化前，我们会明显的发现build之后的文件中vender.js和main.js 比较大，特别是vender.js有时候会有大几百kb，还有main.js当然通过网页的开发者工具也会发现文件的加载速度比较慢，影响了整个页面的加载速度。因此针对性的减小文件体积会大大提高网页的加载速度。
 
 1、首先，我们一般会通过使用CDN加载vue、vuex等资源的方式将这部分资源从vender.js中剥离出来。
@@ -65,10 +65,10 @@ module.exports = {
     const joblist = () => import("../components/joblist/index.vue");
     const famouscompanydetail = () => import("../components/famousCompanyDetails/index.vue");
 ```
-## 合理利用缓存
+### 合理利用缓存
 将css、js通过hash指纹追踪文件内容变化(vue-cli 已配置)，合理设置静态文件缓存过期时间，增量缓存
 
-## 开启gzip压缩
+### 开启gzip压缩
 
 gzip压缩需要服务端配合，具体的配置nginx和apache有别。
 前端需要的配置有：
@@ -118,12 +118,12 @@ if (config.build.productionGzip) {
 }
 ```
 
-## js、css 放在别处
+### js、css 放在别处
 静态文件放在别处可以减小服务器的压力
-## 按需引入第三方插件
+### 按需引入第三方插件
 常见的有一些js函数库、iview的ui库等
 
-## 若首屏为登录页，可以做成多入口，登录页单独分离为一个入口
+### 若首屏为登录页，可以做成多入口，登录页单独分离为一个入口
 
 **修改webpack配置**
 在原先只有一个入口叫app的基础上，再加一个叫login的入口，指向另一个入口js文件；
@@ -135,7 +135,7 @@ HtmlWebpackPlugin默认会把所有资源放进html，为了去掉不需要的�
 添加之前配好的login入口文件，与app类似，但是去掉登录页不需要的东西，如用不到的组件和样式等；
 添加login入口专用的router配置文件，去掉其他路由，只留下登录页一个就好：
 添加登录页的html模板，也是去掉登录里用不到的资源。
-![de13d09274734c905ce98cb4b2aca0df.png](en-resource://database/711:0)
+![router配置](/assets/2019-03-19/12.png "router配置")
 
 其他：
 登录完不是用vue-router的push方法，而是改成直接修改location.href跳到另一个页面；

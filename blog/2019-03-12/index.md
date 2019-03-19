@@ -6,7 +6,6 @@ tags: ['static website', 'CDN', 'cache']
 banner: ""
 ---
 
-# Netlify 将静态网站部署在CDN上
 
 
 > 在计算机科学中有两个难解决的问题：缓存失效和命名。
