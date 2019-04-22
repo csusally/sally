@@ -1,7 +1,7 @@
 ---
-date: "2018-04-22"
+date: "2019-04-22"
 title: "pm2 守护NUXT进程"
-category: "构建"
+category: "部署"
 tags: ["nuxt","ssr","PM2","进程管理"]
 banner: ""
 ---
