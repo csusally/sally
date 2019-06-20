@@ -125,9 +125,9 @@ exports.createPages = ({ actions, graphql }) => {
     const postsPerPage = config.POST_PER_PAGE;
     const numPages = Math.ceil(posts.length / postsPerPage);
     const works = [
-      { title: 'apple', img: 'http://localhost:8000/assets/bg.png' ,link:'http://www.baidu.com'},
-      { title: 'helloork2', img: 'http://localhost:8000/assets/bg/2.jpg', link: 'http://www.baidu.com' },
-      { title: 'Welloork2', img: 'http://localhost:8000/assets/bg/4.jpg', link: 'http://www.baidu.com' },
+      { title: 'apple', img: 'http://localhost:8000/assets/bg.png' ,link:'//www.baidu.com'},
+      { title: 'helloork2', img: 'http://localhost:8000/assets/bg/2.jpg', link: '//www.baidu.com' },
+      { title: 'Welloork2', img: 'http://localhost:8000/assets/bg/4.jpg', link: '//www.baidu.com' },
     ];
     createPage({
       path: `/workstest/`,
