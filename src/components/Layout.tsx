@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: ${theme.colors.bg};
     color: ${theme.colors.grey.default};
-    @include breakpoint(${media.phone}){
+    @media ${media.phone} {
       font-size: 14px;
     }
   }
