@@ -1,3 +1,11 @@
+---
+date: "2019-07-12"
+title: "关于vue项目中npm包安装失败&bebal版本不对等问题的解决方"
+category: "VUE"
+tags: ["VUE", "npm", "babel"]
+banner: "/assets/bg/2.jpg"
+---
+
 一、如果安装npm包时出现错误，（很可能是使用的淘宝的源）可以尝试以下的流程：
 
     1、npm set registry https://registry.npmjs.org/   
