@@ -45,7 +45,7 @@
     "husky": "^1.1.2",
     "lint-staged": "^7.3.0",
     "lodash": "^4.17.11",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "polished": "^2.2.0",
     "prettier": "^1.14.3",
     "prismjs": "^1.15.0",
