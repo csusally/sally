@@ -44,7 +44,7 @@
     "gh-pages": "^2.0.1",
     "husky": "^1.1.2",
     "lint-staged": "^7.3.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "node-sass": "^4.11.0",
     "polished": "^2.2.0",
     "prettier": "^1.14.3",
